@@ -8,7 +8,7 @@ import Spot from '../Spot/Spot';
 const Home = () => {
     const[spots,setSpot]=useState([])
     useEffect(()=>{
-        fetch("./fakeData.json")
+        fetch("http://localhost:5000/spot")
         .then(res=>res.json())
         .then(data=>setSpot(data))
     },[])
