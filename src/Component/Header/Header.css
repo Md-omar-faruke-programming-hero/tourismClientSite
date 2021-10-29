@@ -3,3 +3,8 @@ nav a{
     color: black;
     margin-right: 50px;
 }
+nav a:hover{
+    background-color: tomato;
+    padding: 4px;
+    color: black;
+}

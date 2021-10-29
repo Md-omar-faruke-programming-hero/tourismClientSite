@@ -1,0 +1,7 @@
+input{
+    outline: none;
+    
+}
+input:hover{
+    background-color: lightblue;
+}
