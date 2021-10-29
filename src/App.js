@@ -1,4 +1,5 @@
 import { BrowserRouter ,Switch,Route} from "react-router-dom";
+import AddSpot from "./Component/AddSpot/AddSpot";
 import AuthProvider from "./Component/AuthProvider/AuthProvider";
 import BookSpot from "./Component/BookSpot/BookSpot";
 import Header from "./Component/Header/Header";
@@ -26,6 +27,9 @@ function App() {
               </Route>
               <Route path="/login">
                   <Login></Login>
+              </Route>
+              <Route path="/addSpot">
+                  <AddSpot></AddSpot>
               </Route>
               <PrivateRoute path="/bookSpot/:id">
                   <BookSpot></BookSpot>

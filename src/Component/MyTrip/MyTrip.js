@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useAuth from '../../Hook/useAuth';
 import pic from "../../image/download.jpg"
 
+
 const MyTrip = () => {
     const{user}=useAuth()
     const[trips,setTrip]=useState([])
@@ -11,7 +12,7 @@ const MyTrip = () => {
         .then(data=>setTrip(data.filter(myTrip=> myTrip.email===user.email )))
     },[user.email])
     return (
-        <div className="container ">
+        <div className="container my-5 ">
             <div className="row  my-5">
                     {
                         trips.map(user=>  <div className="col-md-5 mb-4 border p-3 ms-2 ">

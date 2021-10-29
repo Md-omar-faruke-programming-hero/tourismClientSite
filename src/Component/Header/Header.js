@@ -21,13 +21,15 @@ const Header = () => {
                    <nav>
                         <Link to="/home">Home</Link>
                         {
-                            user.email && <Link to="/trip">My Trip</Link>
+                            user.email && <Link to="/trip" className="text-primary fw-bolder">My Trip</Link>
                         }
                         <Link to="/about">About Us</Link>
                         <Link to="/about">Contact Us</Link>
+                        <Link to="/addSpot">Add_Travel-spot</Link>
                         {
-                            user.email? <button onClick={signout} className="btn btn-danger">Log out</button> :<Link to="/login">Login</Link>
+                            user.email? <button onClick={signout} className="btn btn-danger me-2">Log out</button> :<Link to="/login">Login</Link>
                         }
+                        
                     </nav>
                    
                    </div>
