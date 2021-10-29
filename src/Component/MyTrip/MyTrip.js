@@ -11,6 +11,25 @@ const MyTrip = () => {
         .then(res=>res.json())
         .then(data=>setTrip(data.filter(myTrip=> myTrip.email===user.email )))
     },[user.email])
+
+
+
+    const cancleTour=(id)=>{
+       const process= window.confirm("Are You Sure To Delete?")
+       if(process){
+        fetch(`http://localhost:5000/bookData/${id}`,{
+            method:"delete"
+        }).then(res=>res.json())
+        .then(data=>{
+            if(data.deletedCount>0){
+                alert("deleted successfully and you will miss the trip 😛")
+                const remain=trips.filter(rest=> id!==rest._id)
+                setTrip(remain);
+            }
+        })
+       }
+        
+    }
     return (
         <div className="container my-5 ">
             <div className="row  my-5">
@@ -26,7 +45,7 @@ const MyTrip = () => {
                              <p>Booked Status: <span className="text-danger">{user.status}</span></p>
                              <div className="text-end">
                              <button  className="btn btn-success me-2">Pay</button>
-                             <button  className="btn btn-danger text-end">cancle</button>
+                             <button onClick={()=>cancleTour(user._id)} className="btn btn-danger text-end">cancle</button>
                              </div>
                             </div>
              

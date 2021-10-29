@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import "./BookSpot.css"
-import { useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router';
 import useAuth from '../../Hook/useAuth';
 
 const BookSpot = () => {
     const {user}=useAuth();
 
-
+    const history=useHistory();
     const{id}=useParams();
     const[bookSpot,setBookSpot]=useState({})
     useEffect(()=>{
@@ -52,6 +52,8 @@ const BookSpot = () => {
                 emailRef.current.value="";
                 dateRef.current.value="";
                 phoneRef.current.value="";
+
+                history.push("/trip")
                 
            }
        })

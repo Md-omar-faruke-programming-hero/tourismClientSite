@@ -26,7 +26,7 @@ const Home = () => {
                 <p className="text-warning text-center fs-4 mb-0">Explore your world</p>
                 <h1 className="text-center mt-0">Select your best Package <br /> For Your Travel </h1>
             </div>
-            <div className="container">
+            <div className="container mb-5">
                 <div className="row g-4">
                     {
                         spots.map(spot=> <Spot key={spot.name} spot={spot} ></Spot>)
