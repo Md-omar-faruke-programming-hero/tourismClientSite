@@ -1,0 +1,24 @@
+.pic{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+}
+.offer{
+    position: absolute;
+    left: 52%;
+   top: 55%;
+}
+.p{
+    position: absolute; 
+    bottom: 50%;
+}
+.pp{
+    position: absolute;
+    left: 50%;
+   top: 23%;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
