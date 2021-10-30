@@ -12,7 +12,7 @@ const Header = () => {
             <small className="fs-5 ms-5">+1 763-227-5032</small>
             <small className="fs-5 ms-5">info@example.com</small>
             </div>
-            <div className="d-flex  align-items-center my-2">
+            <div className="d-flex shadow-lg  align-items-center ">
                 <div className="w-25 logo">
                    <img className="w-50 ms-5 " src={logo} alt="" /> 
                 </div>
@@ -25,7 +25,12 @@ const Header = () => {
                         }
                         <Link to="/about">About Us</Link>
                         <Link to="/about">Contact Us</Link>
-                        <Link to="/addSpot">Add_Travel-spot</Link>
+                       {
+                           user.email &&  <Link to="/addSpot" className="text-primary fw-bolder">Add_Travel-spot</Link>
+                       }
+                       {
+                           user.email && <Link to="/manage">ManageAllBooked</Link>
+                       }
                         {
                             user.email? <button onClick={signout} className="btn btn-danger me-2">Log out</button> :<Link to="/login">Login</Link>
                         }

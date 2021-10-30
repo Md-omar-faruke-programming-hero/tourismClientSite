@@ -41,8 +41,9 @@ const MyTrip = () => {
                             </div>
                             <div className="col-md-8">
                              <h2 className="text-muted" >{user.spot}</h2>
-                             <p>Trip Cost: <span className="text-danger">${user.price}</span> only</p>
+                             <p>Trip Cost: <span className="text-danger">{user.price}</span> only</p>
                              <p>Booked Status: <span className="text-danger">{user.status}</span></p>
+                           
                              <div className="text-end">
                              <button  className="btn btn-success me-2">Pay</button>
                              <button onClick={()=>cancleTour(user._id)} className="btn btn-danger text-end">cancle</button>

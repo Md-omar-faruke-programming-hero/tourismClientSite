@@ -5,6 +5,7 @@ import BookSpot from "./Component/BookSpot/BookSpot";
 import Header from "./Component/Header/Header";
 import Home from "./Component/Home/Home";
 import Login from "./Component/Login/Login";
+import ManageAllbooking from "./Component/ManageAllBooking/ManageAllbooking";
 import MyTrip from "./Component/MyTrip/MyTrip";
 import PrivateRoute from "./Component/PrivateRoute/PrivateRoute";
 
@@ -30,6 +31,9 @@ function App() {
               </Route>
               <Route path="/addSpot">
                   <AddSpot></AddSpot>
+              </Route>
+              <Route path="/manage">
+                  <ManageAllbooking></ManageAllbooking>
               </Route>
               <PrivateRoute path="/bookSpot/:id">
                   <BookSpot></BookSpot>

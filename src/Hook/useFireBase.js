@@ -5,7 +5,11 @@ import fireBaseInitialization from "../FireBase/FireBase.initialize";
 fireBaseInitialization()
 const useFireBase=()=>{
     const[user,setUser]=useState('');
+    // for data load redirect log in page issue
     const[isloading,setloading]=useState(true);
+
+    
+    
 
     const provider = new GoogleAuthProvider();
     const auth = getAuth();
@@ -37,6 +41,7 @@ const useFireBase=()=>{
         signout,
         setloading,
         isloading
+       
 
         
     }

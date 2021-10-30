@@ -70,7 +70,7 @@ const AddSpot = () => {
                     <div className="col-md-6">
                     <label for="basic-url" className="form-label">Duration</label>
                         <div className="input-group mb-3">
-                             <input ref={timeRef}  type="number"  className="form-control mb-3" id="basic-url" aria-describedby="basic-addon3"/>
+                             <input placeholder="days" ref={timeRef}  type="number"  className="form-control mb-3" id="basic-url" aria-describedby="basic-addon3"/>
                         </div>
                     <label for="basic-url" className="form-label">Spot View</label>
                         <div className="input-group mb-3">

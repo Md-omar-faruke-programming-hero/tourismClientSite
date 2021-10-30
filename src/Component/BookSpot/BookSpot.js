@@ -4,7 +4,8 @@ import { useHistory, useParams } from 'react-router';
 import useAuth from '../../Hook/useAuth';
 
 const BookSpot = () => {
-    const {user}=useAuth();
+    const[isloading,setBooked]=useState(true);
+    const {user,}=useAuth();
 
     const history=useHistory();
     const{id}=useParams();
@@ -24,6 +25,10 @@ const BookSpot = () => {
     
 
     const submit=(e)=>{
+    
+        setBooked(false)
+
+
         e.preventDefault()
         const price= document.getElementById("price").innerText
         const spot=document.getElementById("spotname").innerText
@@ -67,14 +72,16 @@ const BookSpot = () => {
                 <img className="w-100 mb-4 " src={bookSpot.img} alt="" />
                 <div className="d-flex justify-content-lg-evenly align-items-center">
                 <h1 id="spotname" className="mb-2">{bookSpot.name}</h1>
-                <p id="price" >{bookSpot.price} </p>
-                <small className="text-warning fw-bolder">{bookSpot.rating}</small>
+                <div>
+                <p  >cost: <span id="price">${bookSpot.price}</span> only </p>
+                <small className="text-warning fw-bolder">{bookSpot.rating}k+Rating</small>
+                </div>
                 </div>
                 <hr />
             <div className="d-flex justify-content-md-between">
                 <div>
                     <p className="text-warning m-0 fs-4"><i className="far fa-clock text-black me-1"></i>Duration</p>
-                    <small className="text-secondary fw-bolder m-0">{bookSpot.day}</small>
+                    <small className="text-secondary fw-bolder m-0">{bookSpot.day} days</small>
                 </div>
                  <div>
                     <p className="text-warning m-0 fs-4"><i className="fas fa-shoe-prints text-black me-1"></i>Tour Type</p>
@@ -108,7 +115,7 @@ const BookSpot = () => {
                 <input ref={phoneRef} className="w-75 my-2 rounded-pill p-2" type="text" placeholder="Have to remember this" required /> <br />
 
                 <label  htmlFor="">Date</label> <br />
-                <input ref={dateRef} className="w-75 my-2 rounded-pill p-2" type="text" required /> <br />
+                <input  ref={dateRef} className="w-75 my-2 rounded-pill p-2" type="date" required /> <br />
 
                
 
