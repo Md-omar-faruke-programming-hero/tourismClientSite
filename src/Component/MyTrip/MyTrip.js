@@ -7,7 +7,7 @@ const MyTrip = () => {
     const{user}=useAuth()
     const[trips,setTrip]=useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/bookData')
+        fetch('https://shielded-meadow-16233.herokuapp.com/bookData')
         .then(res=>res.json())
         .then(data=>setTrip(data.filter(myTrip=> myTrip.email===user.email )))
     },[user.email])
@@ -17,7 +17,7 @@ const MyTrip = () => {
     const cancleTour=(id)=>{
        const process= window.confirm("Are You Sure To Delete?")
        if(process){
-        fetch(`http://localhost:5000/bookData/${id}`,{
+        fetch(`https://shielded-meadow-16233.herokuapp.com/bookData/${id}`,{
             method:"delete"
         }).then(res=>res.json())
         .then(data=>{

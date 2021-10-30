@@ -10,7 +10,7 @@ const ManageAllbooking = () => {
    
     const [lists,setList]=useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/bookData')
+        fetch('https://shielded-meadow-16233.herokuapp.com/bookData')
         .then(res=>res.json())
         .then(data=>setList(data))
     },[lists])
@@ -18,7 +18,7 @@ const ManageAllbooking = () => {
     const cancleUserData=(id)=>{
         const process= window.confirm("Are You Sure To Delete?")
         if(process){
-         fetch(`http://localhost:5000/bookData/${id}`,{
+         fetch(`https://shielded-meadow-16233.herokuapp.com/bookData/${id}`,{
              method:"delete"
          }).then(res=>res.json())
          .then(data=>{
@@ -38,7 +38,7 @@ const ManageAllbooking = () => {
      
      const statusUpdate=(id)=>{
        
-        fetch(`http://localhost:5000/bookData/${id}`,{
+        fetch(`https://shielded-meadow-16233.herokuapp.com/bookData/${id}`,{
             method:"put",
             headers:{
                 "content-type":"application/json"

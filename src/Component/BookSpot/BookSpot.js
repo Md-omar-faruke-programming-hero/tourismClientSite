@@ -11,7 +11,7 @@ const BookSpot = () => {
     const{id}=useParams();
     const[bookSpot,setBookSpot]=useState({})
     useEffect(()=>{
-        fetch(`http://localhost:5000/spot/${id}`)
+        fetch(`https://shielded-meadow-16233.herokuapp.com/spot/${id}`)
         .then(res=>res.json())
         .then(data=>setBookSpot(data));
     },[id])
@@ -43,7 +43,7 @@ const BookSpot = () => {
        const selectSpot={
            name:name,email:email,data:date,phn:phn,status:"panding", price:price,spot:spot
        }
-       fetch('http://localhost:5000/bookData',{
+       fetch('https://shielded-meadow-16233.herokuapp.com/bookData',{
            method:"post",
            headers:{
                "content-type":"application/json"

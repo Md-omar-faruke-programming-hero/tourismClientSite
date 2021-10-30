@@ -9,7 +9,7 @@ import Spot from '../Spot/Spot';
 const Home = () => {
     const[spots,setSpot]=useState([])
    useEffect(()=>{
-        fetch("http://localhost:5000/spot")
+        fetch("https://shielded-meadow-16233.herokuapp.com/spot")
         .then(res=>res.json())
         .then(data=>setSpot(data))
    },[])

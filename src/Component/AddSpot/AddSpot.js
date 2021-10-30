@@ -20,7 +20,7 @@ const AddSpot = () => {
             name:name,price:price,day:day,img:img,rating:rating
         }
 
-        fetch("http://localhost:5000/spot",{
+        fetch("https://shielded-meadow-16233.herokuapp.com/spot",{
             method:"post",
             headers:{
                 "content-type":"application/json"
