@@ -54,25 +54,25 @@ const Home = () => {
                        <div className="row ">
                        <div className="col-md-2 mx-auto bg-success rounded-3 p-5">
                       <div className="text-center ">
-                            <i class="text-center fas fa-male fa-4x"></i>
+                            <i className="text-center fas fa-male fa-4x"></i>
                             <h6 className="text-white">2000+ Our <br /> worldwide guide</h6>
                       </div>
                        </div>
                        <div className="col-md-2 rounded-3 mx-auto bg-success p-5">
                       <div className="text-center ">
-                      <i class="fas fa-handshake fa-4x text-center"></i>
+                      <i className="fas fa-handshake fa-4x text-center"></i>
                             <h6 className="text-white">100% trusted travel agency</h6>
                       </div>
                        </div>
                        <div className="col-md-2 rounded-3 mx-auto bg-success p-5">
                       <div className="text-center ">
-                            <i class="text-center fas fa-male fa-4x"></i>
+                            <i className="text-center fas fa-male fa-4x"></i>
                            <h6 className="text-white"> 10+ year of travel experience</h6>
                       </div>
                        </div>
                        <div className="col-md-2 rounded-3 mx-auto bg-success p-5">
                       <div className="text-center ">
-                      <i class="fas fa-hiking fa-4x text-center "></i>
+                      <i className="fas fa-hiking fa-4x text-center "></i>
                             <h6 className="text-white">90% of our traveller happy</h6>
                       </div>
                        </div>
@@ -84,9 +84,9 @@ const Home = () => {
     
                 <div className="w-75 bg-warning mx-auto b p-5  my-5 d-flex flex-column justify-content-center align-items-center">
                     <h1 className="text-center fw-bolder text-white mt-5">Subscribe To Our Newsletter <br /> For Latest Update</h1>
-                    <div class="d-flex mb-5">
-                        <input class="form-control me-2" type="search" placeholder="enter your mail" aria-label="Search"/>
-                        <button class="btn btn-outline-success" type="submit">Subscribe</button>
+                    <div className="d-flex mb-5">
+                        <input className="form-control me-2" type="search" placeholder="enter your mail" aria-label="Search"/>
+                        <button className="btn btn-outline-success" type="submit">Subscribe</button>
                     </div>
                 </div>
                 

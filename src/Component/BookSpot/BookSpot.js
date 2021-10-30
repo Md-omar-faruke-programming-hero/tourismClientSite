@@ -4,7 +4,7 @@ import { useHistory, useParams } from 'react-router';
 import useAuth from '../../Hook/useAuth';
 
 const BookSpot = () => {
-    const[isloading,setBooked]=useState(true);
+   
     const {user,}=useAuth();
 
     const history=useHistory();
@@ -26,7 +26,7 @@ const BookSpot = () => {
 
     const submit=(e)=>{
     
-        setBooked(false)
+        
 
 
         e.preventDefault()

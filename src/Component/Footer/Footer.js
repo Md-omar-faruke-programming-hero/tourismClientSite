@@ -11,9 +11,9 @@ const Footer = () => {
               <img className="w-50 " src={logo} alt="" />
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto error ad doloremque explicabo accusamus velit optio, possimus aspernatur amet aperiam eos officia sequi debitis voluptatum quis consequatur mollitia provident? Placeat!</p>
                 <h4>Follow Use</h4>
-                <i class="facebook fab fa-facebook-square fa-2x me-3"></i>
-                <i class=" youtube fab fa-youtube  fa-2x me-3"></i>
-                <i class=" insta fab fa-instagram-square fa-2x"></i>
+                <i className="facebook fab fa-facebook-square fa-2x me-3"></i>
+                <i className=" youtube fab fa-youtube  fa-2x me-3"></i>
+                <i className=" insta fab fa-instagram-square fa-2x"></i>
             </div>
             <div className="col-md-3 mt-5">
                 <h4>Contact Us</h4>

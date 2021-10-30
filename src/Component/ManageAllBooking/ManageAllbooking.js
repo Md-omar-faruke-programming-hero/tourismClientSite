@@ -82,7 +82,7 @@ const ManageAllbooking = () => {
                                        <td>{lis.phn}</td>
                                        <td>{lis.price}</td>
                                        <td className="fw-bolder ">{lis.status}</td>
-                                       <td><button onClick={()=>statusUpdate(lis._id)} className='btn btn-danger' ><i class="fas fa-check-circle"></i></button></td>         
+                                       <td><button onClick={()=>statusUpdate(lis._id)} className='btn btn-danger' ><i className="fas fa-check-circle"></i></button></td>         
                                        <td><button onClick={()=>cancleUserData(lis._id)}  className="btn btn-danger"><i className="far fa-trash-alt"></i></button></td>         
                                    </tr>
                                
