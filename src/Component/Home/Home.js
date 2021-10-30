@@ -5,6 +5,7 @@ import Spot from '../Spot/Spot';
 
 
 
+
 const Home = () => {
     const[spots,setSpot]=useState([])
    useEffect(()=>{
@@ -34,6 +35,42 @@ const Home = () => {
 
                 </div>
 
+            </div>
+
+            <div>
+               <div className="text-center">
+                    <h5 className="text-warning fw-bolder">why TourX</h5>
+                    <h2 className="text-dark fw-bolder">Why You Are Travel With Tourx</h2>
+               </div>
+              <div className="container">
+                   <div className="row ">
+                   <div className="col-md-2 mx-auto bg-success rounded-3 p-5">
+                  <div className="text-center ">
+                        <i class="text-center fas fa-male fa-4x"></i>
+                        <h6 className="text-white">2000+ Our <br /> worldwide guide</h6>
+                  </div>
+                   </div>
+                   <div className="col-md-2 rounded-3 mx-auto bg-success p-5">
+                  <div className="text-center ">
+                  <i class="fas fa-handshake fa-4x text-center"></i>
+                        <h6 className="text-white">100% trusted travel agency</h6>
+                  </div>
+                   </div>
+                   <div className="col-md-2 rounded-3 mx-auto bg-success p-5">
+                  <div className="text-center ">
+                        <i class="text-center fas fa-male fa-4x"></i>
+                       <h6 className="text-white"> 10+ year of travel experience</h6>
+                  </div>
+                   </div>
+                   <div className="col-md-2 rounded-3 mx-auto bg-success p-5">
+                  <div className="text-center ">
+                  <i class="fas fa-hiking fa-4x text-center "></i>
+                        <h6 className="text-white">90% of our traveller happy</h6>
+                  </div>
+                   </div>
+
+               </div>
+              </div>
             </div>
             
         </div>

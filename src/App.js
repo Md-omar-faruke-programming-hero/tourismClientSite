@@ -2,6 +2,7 @@ import { BrowserRouter ,Switch,Route} from "react-router-dom";
 import AddSpot from "./Component/AddSpot/AddSpot";
 import AuthProvider from "./Component/AuthProvider/AuthProvider";
 import BookSpot from "./Component/BookSpot/BookSpot";
+import Footer from "./Component/Footer/Footer";
 import Header from "./Component/Header/Header";
 import Home from "./Component/Home/Home";
 import Login from "./Component/Login/Login";
@@ -38,7 +39,9 @@ function App() {
               <PrivateRoute path="/bookSpot/:id">
                   <BookSpot></BookSpot>
               </PrivateRoute>
+            
           </Switch>
+          <Footer></Footer>
      </BrowserRouter>
     </AuthProvider>
     </div>

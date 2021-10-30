@@ -29,7 +29,7 @@ const Header = () => {
                            user.email &&  <Link to="/addSpot" className="text-primary fw-bolder">Add_Travel-spot</Link>
                        }
                        {
-                           user.email && <Link to="/manage">ManageAllBooked</Link>
+                           user.email && <Link to="/manage" className="text-primary fw-bolder">ManageAllBooked</Link>
                        }
                         {
                             user.email? <button onClick={signout} className="btn btn-danger me-2">Log out</button> :<Link to="/login">Login</Link>
