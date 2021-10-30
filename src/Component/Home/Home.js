@@ -72,6 +72,15 @@ const Home = () => {
                </div>
               </div>
             </div>
+
+
+            <div className="w-75 bg-warning mx-auto b p-5  my-5 d-flex flex-column justify-content-center align-items-center">
+                <h1 className="text-center fw-bolder text-white mt-5">Subscribe To Our Newsletter <br /> For Latest Update</h1>
+                <div class="d-flex mb-5">
+                    <input class="form-control me-2" type="search" placeholder="enter your mail" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Subscribe</button>
+                </div>
+            </div>
             
         </div>
     );

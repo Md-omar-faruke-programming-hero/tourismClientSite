@@ -23,3 +23,7 @@ body{
     font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
 }
+.b{
+    border-radius: 30px;
+    border: 1px solid;
+}
