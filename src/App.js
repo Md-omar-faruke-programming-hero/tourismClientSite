@@ -10,6 +10,7 @@ import Home from "./Component/Home/Home";
 import Login from "./Component/Login/Login";
 import ManageAllbooking from "./Component/ManageAllBooking/ManageAllbooking";
 import MyTrip from "./Component/MyTrip/MyTrip";
+import NotFound from "./Component/NotFound/NotFound";
 import PrivateRoute from "./Component/PrivateRoute/PrivateRoute";
 
 
@@ -23,24 +24,31 @@ function App() {
               <Route exact path="/">
                   <Home></Home>
               </Route>
+              
               <Route  path="/home">
                   <Home></Home>
               </Route>
+
               <Route exact path="/trip">
                  <MyTrip></MyTrip>
               </Route>
+
               <Route path="/login">
                   <Login></Login>
               </Route>
+
               <Route path="/addSpot">
                   <AddSpot></AddSpot>
               </Route>
+
               <Route path="/contact">
                   <ContactUs></ContactUs>
               </Route>
+
               <Route path="/about">
                   <AboutUs></AboutUs>
               </Route>
+
               <Route path="/manage">
               <ManageAllbooking></ManageAllbooking>
               </Route>
@@ -48,6 +56,10 @@ function App() {
               <PrivateRoute path="/bookSpot/:id">
                   <BookSpot></BookSpot>
               </PrivateRoute>
+
+              <Route path="*">
+                  <NotFound></NotFound>
+              </Route>
             
           </Switch>
           <Footer></Footer>
