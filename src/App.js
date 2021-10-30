@@ -1,7 +1,9 @@
 import { BrowserRouter ,Switch,Route} from "react-router-dom";
+import AboutUs from "./Component/AboutUs/AboutUs";
 import AddSpot from "./Component/AddSpot/AddSpot";
 import AuthProvider from "./Component/AuthProvider/AuthProvider";
 import BookSpot from "./Component/BookSpot/BookSpot";
+import ContactUs from "./Component/ContactUs/ContactUs";
 import Footer from "./Component/Footer/Footer";
 import Header from "./Component/Header/Header";
 import Home from "./Component/Home/Home";
@@ -33,9 +35,16 @@ function App() {
               <Route path="/addSpot">
                   <AddSpot></AddSpot>
               </Route>
-              <Route path="/manage">
-                  <ManageAllbooking></ManageAllbooking>
+              <Route path="/contact">
+                  <ContactUs></ContactUs>
               </Route>
+              <Route path="/about">
+                  <AboutUs></AboutUs>
+              </Route>
+              <Route path="/manage">
+              <ManageAllbooking></ManageAllbooking>
+              </Route>
+              
               <PrivateRoute path="/bookSpot/:id">
                   <BookSpot></BookSpot>
               </PrivateRoute>

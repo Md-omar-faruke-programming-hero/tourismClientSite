@@ -30,6 +30,10 @@ const MyTrip = () => {
        }
         
     }
+
+    const pay=()=>{
+        alert("this function will update soon")
+    }
     return (
         <div className="container my-5 ">
             <div className="row  my-5">
@@ -45,7 +49,7 @@ const MyTrip = () => {
                              <p>Booked Status: <span className="text-danger">{user.status}</span></p>
                            
                              <div className="text-end">
-                             <button  className="btn btn-success me-2">Pay</button>
+                             <button onClick={pay} className="btn btn-success me-2">Pay</button>
                              <button onClick={()=>cancleTour(user._id)} className="btn btn-danger text-end">cancle</button>
                              </div>
                             </div>

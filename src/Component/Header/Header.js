@@ -24,7 +24,7 @@ const Header = () => {
                             user.email && <Link to="/trip" className="text-primary fw-bolder">My Trip</Link>
                         }
                         <Link to="/about">About Us</Link>
-                        <Link to="/about">Contact Us</Link>
+                        <Link to="/contact">Contact Us</Link>
                        {
                            user.email &&  <Link to="/addSpot" className="text-primary fw-bolder">Add_Travel-spot</Link>
                        }
