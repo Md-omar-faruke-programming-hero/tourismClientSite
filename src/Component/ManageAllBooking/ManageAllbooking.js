@@ -49,7 +49,7 @@ const ManageAllbooking = () => {
 
     return (
         <div className="container"> 
-          <p className="text-center text-success">admin panal</p> 
+          <p className="text-center text-success">admin panel</p> 
              <div className="col-md-12 ">
                <table className="table">
                       <thead>
