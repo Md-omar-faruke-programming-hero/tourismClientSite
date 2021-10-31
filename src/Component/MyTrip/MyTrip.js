@@ -48,7 +48,7 @@ const MyTrip = () => {
             <div className="container my-5 ">
                 <div className="row  my-5">
                         {
-                            trips.map(user=>  <div className="col-md-5 mb-4 border p-3 ms-2 ">
+                            trips.map(user=>  <div className="col-md-5 mb-4 border col-12 p-3 ms-2 ">
                             <div className="row">
                                 <div className="col-md-4">
                                      <img className="w-100" src={pic} alt="" />

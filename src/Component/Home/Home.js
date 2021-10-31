@@ -27,8 +27,6 @@ const Home = () => {
             <div>
                 <div className="w-100 ">
                     <img className="pic"  src={banner} alt="" />
-                    <button className="btn btn-danger offer ">See offer</button>
-                    <h3 className="pp">up TO <span className="text-danger fw-bolder">30%</span> off</h3>   
                 </div>
     
                 <div className="mb-5 mt-3">

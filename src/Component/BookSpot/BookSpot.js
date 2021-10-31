@@ -68,10 +68,10 @@ const BookSpot = () => {
     return (
        <div className="container my-5">
             <div className="row mx-0 px-0">
-            <div className="col-md-7 ">
+            <div className="col-md-7 col-12 ">
                 <img className="w-100 mb-4 " src={bookSpot.img} alt="" />
-                <div className="d-flex justify-content-lg-evenly align-items-center">
-                <h1 id="spotname" className="mb-2">{bookSpot.name}</h1>
+                <div className="d-flex gap justify-content-lg-evenly align-items-center">
+                <h1 id="spotname" className="mb-2 name">{bookSpot.name}</h1>
                 <div>
                 <p  >cost: <span id="price">${bookSpot.price}</span> only </p>
                 <small className="text-warning fw-bolder">{bookSpot.rating}k+Rating</small>
@@ -80,7 +80,7 @@ const BookSpot = () => {
                 <hr />
             <div className="d-flex justify-content-md-between">
                 <div>
-                    <p className="text-warning m-0 fs-4"><i className="far fa-clock text-black me-1"></i>Duration</p>
+                    <p className="text-warning m-0  fs-4"><i className="far fa-clock text-black me-1"></i>Duration</p>
                     <small className="text-secondary fw-bolder m-0">{bookSpot.day} days</small>
                 </div>
                  <div>
@@ -99,7 +99,7 @@ const BookSpot = () => {
                 <hr />
 
             </div>
-            <div className="col-md-4 ms-auto">
+            <div className="col-md-4 col-12 mx-auto frm">
                 <h3 className="mb-3 text-warning fw-bolder">Book This Package</h3>
                 <form onSubmit={submit} >
                 

@@ -5,15 +5,15 @@ const AboutUs = () => {
     return (
        <div className="container">
             <div className="row my-5">
-                <div className="col-md-5 mx-auto">
+                <div className="col-md-5 col-12 mx-auto">
                   <h5 className="fw-bolder">About Us</h5>
                   <h2>Who We Are</h2>
-                  <p className="text-muted">Rorem Ipsum is simply dummy text of the printin and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p> <br />
-                  <p className="text-muted">Printer took a galley of type and scrambled it to make a type speci menu book. It has survived not only five centuries, but also the leap intoelectronic typesetting, remaining essentially unchanget was popularised.</p>
+                  <p className="text-muted">TourX is a rapidly-growing global online travel agency, TourX is here to help you plan the perfect trip. Whether you're going on holiday, taking a business trip, or looking to set up a corporate travel account, TourX is here to help you travel the world with cheap flights, discount hotels, and train tickets. </p> <br />
+                  <p className="text-muted">Looking to find great travel deals or enjoy the biggest savings on your next trip? TourX has you covered. With our easy-to-use website and app, along with 24-hour customer service, booking your next trip couldn't be simpler. With TourX, quality travel services in over a dozen languages including English, Mandarin, Cantonese, Japanese, Korean, German, French, and Spanish are just a call—or click—away.</p>
 
 
                 </div>
-                <div className="col-md-5 mx-auto">
+                <div className="col-md-5 col-12 mx-auto">
                     <img className="w-100" src={pic} alt="" />
 
                 </div>

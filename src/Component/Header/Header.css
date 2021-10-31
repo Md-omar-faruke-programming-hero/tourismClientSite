@@ -4,7 +4,16 @@ nav a{
     margin-right: 50px;
 }
 nav a:hover{
-    background-color: tomato;
+    background-color: lightblue;
     padding: 4px;
     color: black;
+}
+.hlogo{
+    width: 15%;
+}
+
+@media only screen and (max-width:699px) {
+    .hlogo{
+        width: 40%;
+    }
 }

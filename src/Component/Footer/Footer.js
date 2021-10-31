@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="row container mt-5">
             <div className="col-md-3 mt-5">
               <img className="w-50 " src={logo} alt="" />
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto error ad doloremque explicabo accusamus velit optio, possimus aspernatur amet aperiam eos officia sequi debitis voluptatum quis consequatur mollitia provident? Placeat!</p>
+                <p>TourX is a rapidly-growing global online travel agency, TourX is here to help you plan the perfect trip. Whether you're going on holiday, taking a business trip, or looking to set up a corporate travel account, TourX is here to help you travel the world with cheap flights, discount hotels, and train tickets. </p>
                 <h4>Follow Use</h4>
                 <i className="facebook fab fa-facebook-square fa-2x me-3"></i>
                 <i className=" youtube fab fa-youtube  fa-2x me-3"></i>
@@ -20,7 +20,7 @@ const Footer = () => {
                 <p>+01852-1265122 <br />+01852-1265122</p> <br />
                 <p>info@example.com <br /> support@example.com</p>
             </div>
-            <div className="col-md-3 mt-5">
+            <div className="col-md-2 mt-5">
                 <h4>Support</h4>
                 <p>contact Us</p>
                 <p>About Us</p>
@@ -28,7 +28,7 @@ const Footer = () => {
                 <p>Package</p>
 
             </div>
-            <div className="col-md-3 mt-5">
+            <div className="col-md-4 mt-5">
                 <h4>We access</h4>
                 <img className="pay" src={payment} alt="" />
             </div>

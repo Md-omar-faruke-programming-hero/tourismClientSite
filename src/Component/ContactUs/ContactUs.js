@@ -7,7 +7,7 @@ const ContactUs = () => {
             <div className="col-md-5 mx-auto">
                 <h4>Send Us A Message</h4>
                 <div className="row">
-                    <div className="col-md-5">
+                    <div className="col-md-5 col-12">
                         <input className="p-2 rounded-3 bg-light m-2" type="text" name="" id="" placeholder="full name"/>
                         <input className="p-2 rounded-3 bg-light m-2"  type="number" name="" id="" placeholder="Phone Number"/>
                     </div>
@@ -21,7 +21,7 @@ const ContactUs = () => {
                 </div>
                 
             </div>
-            <div className="col-md-5 mx-auto">
+            <div className="col-md-5 col-12 mx-auto">
                 <h4>Contact Details</h4>
                 <h5 className="fw-bolder">Phone:</h5>
                 <p className="text-muted">+123 4567 8910  <br />+88 0123 5465</p> <br />
