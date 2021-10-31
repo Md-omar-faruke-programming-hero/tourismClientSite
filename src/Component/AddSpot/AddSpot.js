@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
+import { useHistory } from 'react-router';
 
 const AddSpot = () => {
+    const history=useHistory()
     const nameRef= useRef()
     const costRef=useRef()
     const ratingRef=useRef()
@@ -35,6 +37,7 @@ const AddSpot = () => {
                 timeRef.current.value=""
                 viewRef.current.value=""
                 ratingRef.current.value=""
+                history.push("/home")
 
             }
         })

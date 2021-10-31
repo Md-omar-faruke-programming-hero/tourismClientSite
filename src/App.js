@@ -49,9 +49,9 @@ function App() {
                   <AboutUs></AboutUs>
               </Route>
 
-              <Route path="/manage">
-              <ManageAllbooking></ManageAllbooking>
-              </Route>
+              <PrivateRoute path="/manage">
+                  <ManageAllbooking></ManageAllbooking>
+              </PrivateRoute>
               
               <PrivateRoute path="/bookSpot/:id">
                   <BookSpot></BookSpot>
